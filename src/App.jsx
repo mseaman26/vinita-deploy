@@ -12,7 +12,6 @@ import { BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
-import { BrowserRouter, HashRouter } from "react-router-dom";
 
 
 export default function App() {
@@ -20,14 +19,14 @@ export default function App() {
   return (
     <>
     <Router>
-    <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path='*' element={<Home/>}/>
-			</Routes>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path='*' element={<Home/>}/>
+        </Routes>
       <Footer />
     </Router>
     
